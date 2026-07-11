@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — Shelf Track</title>
+  <title>Privacy Policy — ShelfTrack</title>
   <style>
     :root {
       color-scheme: light;
@@ -52,62 +52,122 @@
 </head>
 <body>
   <header>
-    <h1>Privacy Policy — Shelf Track</h1>
-    <p class="meta">Last updated: June 2026</p>
+    <h1>Privacy Policy — ShelfTrack</h1>
+    <p class="meta">Last updated: 11 July 2026</p>
   </header>
 
   <div class="card">
     <p>
-      Shelf Track (“the app”) helps you scan barcodes, look up product information,
-      manage grocery lists, track pantry stock, and monitor best-before dates.
-      We respect your privacy.
+      ShelfTrack (“the app”) helps you scan barcodes, compare grocery prices, manage shopping lists,
+      track pantry stock, read expiry dates, and ask an AI assistant about products and stores.
+      We respect your privacy and keep most data on your device.
     </p>
 
     <h2>Who is responsible?</h2>
     <p>
-      <strong>Mohsen Goudarzi</strong><br />
-      Email: <strong><a href="mailto:goudarzi.mohsen@gmail.com">goudarzi.mohsen@gmail.com</a></strong>
+      <strong>ShelfTrack</strong> (the app publisher)<br />
+      Contact: <strong><a href="mailto:shelftrack.support@gmail.com">shelftrack.support@gmail.com</a></strong>
     </p>
 
-    <h2>What data do we process?</h2>
+    <h2>What data is stored on your phone?</h2>
+    <p>
+      The app stores data locally in SQLite on your device. This includes:
+    </p>
     <ul>
-      <li><strong>Camera</strong> — used only to scan barcodes and read expiry dates on labels when you choose to. Images are processed on your device and are not uploaded to our servers.</li>
-      <li><strong>Barcode (EAN)</strong> — sent to <a href="https://world.openfoodfacts.org">Open Food Facts</a> to retrieve product name, brand, and image where available.</li>
-      <li><strong>On your phone</strong> — shopping lists, purchase history, pantry items, and product cache (SQLite). This data stays on your device unless you back up your phone yourself.</li>
-      <li><strong>Advertising</strong> — the free version shows banner ads via Google AdMob. AdMob may collect device and usage data according to <a href="https://policies.google.com/privacy">Google’s privacy policy</a>. You can learn more at <a href="https://support.google.com/admob/answer/6128543">Google AdMob &amp; privacy</a>.</li>
+      <li>Shopping lists and list items</li>
+      <li>Purchase history and pantry / kitchen inventory</li>
+      <li>Cached product information and price snapshots</li>
+      <li>AI chat history in the Ask AI tab (until you clear the chat or uninstall the app)</li>
+      <li>App settings and an anonymous device identifier used for AI usage limits</li>
+    </ul>
+    <p>
+      This data stays on your phone unless you back up your device yourself. We do not sync it to our own cloud.
+    </p>
+
+    <h2>What data is sent to services when you use the app?</h2>
+    <ul>
+      <li>
+        <strong>Camera</strong> — used when you scan barcodes or read expiry dates on labels.
+        Images are processed on your device (OCR). We do not upload photos to our servers.
+      </li>
+      <li>
+        <strong>Barcode (EAN)</strong> — sent to
+        <a href="https://world.openfoodfacts.org">Open Food Facts</a> to look up product name, brand, and image
+        where available.
+      </li>
+      <li>
+        <strong>AI assistant (Ask AI)</strong> — when you send a message, the app sends your chat messages,
+        optional scanned product context, your device language and country/region (not GPS),
+        an anonymous device ID, and subscription status to our backend API.
+        Our API processes requests using <a href="https://openai.com/policies/privacy-policy">OpenAI</a>.
+        The assistant may also use web search for store links and product information when needed.
+        Chat usage is limited per month; we store quota counts linked to your anonymous device ID on our server.
+      </li>
+      <li>
+        <strong>Subscriptions</strong> — if you subscribe to remove ads, purchases are handled by
+        Google Play and <a href="https://www.revenuecat.com/privacy">RevenueCat</a>.
+        We receive subscription status (for example, whether Pro is active), not your payment card details.
+      </li>
+      <li>
+        <strong>Advertising</strong> — the free version shows banner ads via
+        <a href="https://admob.google.com">Google AdMob</a>.
+        AdMob may collect device and usage data according to
+        <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.
+      </li>
+      <li>
+        <strong>Product catalog (optional)</strong> — if enabled, the app may query a read-only product catalog
+        hosted on <a href="https://supabase.com/privacy">Supabase</a> to show store prices and promotions.
+        Queries typically include product identifiers or search terms, not personal profile data.
+      </li>
+      <li>
+        <strong>Feedback email</strong> — if you choose “Send feedback” in Settings, your email app opens
+        with our support address. We only receive what you choose to send.
+      </li>
     </ul>
 
     <h2>What we do not collect</h2>
-    <p>
-      We do not require an account. We do not collect your name, home address, or precise location.
-      We do not sell personal data.
-    </p>
+    <ul>
+      <li>We do not require an account to use the app.</li>
+      <li>We do not collect your name, home address, or precise GPS location.</li>
+      <li>We do not sell your personal data.</li>
+    </ul>
 
     <h2>Third-party services</h2>
     <ul>
-      <li><a href="https://world.openfoodfacts.org">Open Food Facts</a> — open product database</li>
+      <li><a href="https://world.openfoodfacts.org">Open Food Facts</a> — product database</li>
+      <li><a href="https://openai.com">OpenAI</a> — AI assistant replies (via our API)</li>
+      <li><a href="https://www.revenuecat.com">RevenueCat</a> — subscription management</li>
       <li><a href="https://admob.google.com">Google AdMob</a> — in-app advertising</li>
-      <li>Google Play — app distribution</li>
+      <li><a href="https://supabase.com">Supabase</a> — optional product catalog hosting</li>
+      <li>Google Play — app distribution and in-app purchases</li>
     </ul>
 
     <h2>Retention</h2>
-    <p>
-      Data stored on your phone remains until you delete the app or clear data in the app.
-      Third-party services maintain their own logs and retention policies.
-    </p>
+    <ul>
+      <li><strong>On your phone</strong> — until you delete data in the app, clear chat, or uninstall.</li>
+      <li><strong>AI quota on our server</strong> — usage counters are kept per month for fair-use limits.</li>
+      <li><strong>Third parties</strong> — each provider keeps data according to its own policy.</li>
+    </ul>
 
     <h2>Your rights (GDPR)</h2>
     <p>
-      Because most data is stored locally, you can delete it by uninstalling the app
-      or clearing lists and history inside the app. For questions, contact
-      <strong><a href="mailto:goudarzi.mohsen@gmail.com">goudarzi.mohsen@gmail.com</a></strong>.
+      If you are in the European Economic Area, you may have rights to access, correct, delete, or restrict
+      processing of personal data, and to object or lodge a complaint with your local supervisory authority.
+    </p>
+    <p>
+      Because most data is stored locally, you can delete it by uninstalling the app or clearing lists,
+      history, and chat inside the app. For questions about data we process on our servers, contact
+      <strong><a href="mailto:shelftrack.support@gmail.com">shelftrack.support@gmail.com</a></strong>.
     </p>
 
     <h2>Children</h2>
-    <p>The app is not directed at children under 13.</p>
+    <p>The app is not directed at children under 13 (or the minimum age required in your country).</p>
 
     <h2>Changes</h2>
-    <p>We may update this policy. The date at the top will change when we do.</p>
+    <p>
+      We may update this policy when the app changes. The “Last updated” date at the top will change when we do.
+      Continued use of the app after an update means you accept the revised policy.
+    </p>
   </div>
 </body>
 </html>
