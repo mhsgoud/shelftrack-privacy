@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — ShelfTrack</title>
+  <meta
+    name="description"
+    content="Help and FAQ for ShelfTrack: accounts, data storage, shared lists, voice add, Pro, and how to contact support."
+  />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand-link" href="index.html">
+        <img src="assets/icon.png" width="32" height="32" alt="" />
+        <span class="brand-link__name">ShelfTrack</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a
+          class="nav__cta"
+          href="https://play.google.com/store/apps/details?id=com.shelftrack.app"
+          >Get the app</a
+        >
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <header class="page__header">
+      <h1>Support</h1>
+      <p class="page__intro">
+        Quick answers about ShelfTrack. Need something else? Email us — we’ll help.
+      </p>
+    </header>
+
+    <div class="faq">
+      <details>
+        <summary>What is ShelfTrack?</summary>
+        <div class="faq__body">
+          <p>
+            ShelfTrack is an Android grocery app for scanning products, building shopping lists,
+            tracking what you have at home, watching best-before dates, and asking an AI assistant
+            about products and stores.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Does it need an account?</summary>
+        <div class="faq__body">
+          <p>
+            No. You can use the core app without creating an account. Optional features like live
+            shared lists use anonymous sign-in behind the scenes so a household can join with a code.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where is my data stored?</summary>
+        <div class="faq__body">
+          <p>
+            Shopping lists, pantry items, and purchase history are stored locally on your phone
+            (SQLite). We do not sync that data to our own cloud by default. See the
+            <a href="privacy-policy.html">privacy policy</a> for what is sent when you use Ask AI,
+            catalogs, ads, or subscriptions.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do shared lists and voice add work?</summary>
+        <div class="faq__body">
+          <p>
+            <strong>Shared lists</strong> — start live sharing from a list to get a short join code.
+            Others enter the code to see and edit the same list in near real time. The list owner can
+            stop sharing; guests can leave.
+          </p>
+          <p>
+            <strong>Voice add</strong> — hold or tap the mic on Lists, speak grocery names, and
+            ShelfTrack transcribes and adds them. Microphone permission is requested only when you
+            use voice. Transcription goes through our API (same auth as Ask AI).
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I get Pro or remove ads?</summary>
+        <div class="faq__body">
+          <p>
+            Open Settings or a Pro prompt in the app and subscribe through Google Play. Purchases are
+            handled by Google Play (and RevenueCat for entitlement status). You can restore purchases
+            on a new device from the Pro screen. Cancel anytime in your Google Play subscriptions.
+          </p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How do I contact support or delete my data?</summary>
+        <div class="faq__body">
+          <p>
+            Email
+            <a href="mailto:shelftrack.support@gmail.com">shelftrack.support@gmail.com</a>
+            or use <strong>Send feedback</strong> in Settings.
+          </p>
+          <p>
+            Most data lives on your device — clear lists, history, and chat in the app, or uninstall
+            to remove it. For questions about server-side AI usage counters, contact the same address.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <aside class="contact-block" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>
+        <a href="mailto:shelftrack.support@gmail.com">shelftrack.support@gmail.com</a>
+      </p>
+      <p>
+        <a href="https://play.google.com/store/apps/details?id=com.shelftrack.app"
+          >Get ShelfTrack on Google Play</a
+        >
+      </p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <p class="site-footer__brand">ShelfTrack</p>
+        <p class="site-footer__meta">Shop smart. Waste less.</p>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.shelftrack.app"
+            >Google Play</a
+          >
+        </li>
+        <li>
+          <a href="mailto:shelftrack.support@gmail.com">shelftrack.support@gmail.com</a>
+        </li>
+      </ul>
+      <p class="site-footer__meta">&copy; ShelfTrack</p>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>

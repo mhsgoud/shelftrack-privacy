@@ -14,16 +14,22 @@ Use the **privacy policy** URL in Play Console → App content → Privacy polic
 
 ## Local structure
 
-- `index.html` — landing
-- `support.html` — FAQ and contact
-- `privacy-policy.html` — privacy policy
-- `css/site.css` / `js/site.js` — shared chrome
-- `assets/` — icon and favicon
-- `app-ads.txt` — AdMob verification
+GitHub Pages is configured to publish the **`docs/`** folder on `main`.
+
+- `docs/index.html` — landing
+- `docs/support.html` — FAQ and contact
+- `docs/privacy-policy.html` — privacy policy
+- `docs/css/site.css` / `docs/js/site.js` — shared chrome
+- `docs/assets/` — icon and favicon
+- `docs/app-ads.txt` — AdMob verification
+
+Matching copies may exist at the repo root for editing convenience; **`docs/` is what goes live.**
 
 ## Publish updates
 
-1. Push to `main` (GitHub Actions deploys automatically).
-2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+1. Edit files under `docs/`, then push to `main`.
+2. In the repo: **Settings → Pages** → Branch `main` · folder **/docs**.
 
-If the live page looks outdated, open **Actions**, run **Deploy ShelfTrack site to GitHub Pages**, then hard-refresh (Ctrl+Shift+R).
+If the live page looks outdated, open **Actions**, check the latest **pages build and deployment**, then hard-refresh (Ctrl+Shift+R).
+
+Optional: switch Pages source to **GitHub Actions** and re-enable the **Deploy ShelfTrack site** workflow to publish from the repo root instead.

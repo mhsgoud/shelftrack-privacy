@@ -1,0 +1,7 @@
+# Static companion site for GitHub Pages (/docs)
+# Avoid theme asset lookup when publishing from /docs
+theme: null
+plugins: []
+exclude:
+  - Gemfile
+  - Gemfile.lock
