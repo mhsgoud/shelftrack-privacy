@@ -1,4 +1,4 @@
-name: Deploy privacy policy to GitHub Pages
+name: Deploy ShelfTrack site to GitHub Pages
 
 on:
   push:
