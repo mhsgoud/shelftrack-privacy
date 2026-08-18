@@ -37,7 +37,9 @@ Use the **privacy policy** URL in Play Console → App content → Privacy polic
 Remove Namecheap parking / URL redirect records that conflict with `@`.
 
 3. Wait for DNS (often 15–60 minutes, sometimes up to 24h). Then tick **Enforce HTTPS** in GitHub Pages.
-4. Update Play Console + app `privacyPolicyUrl` to `https://shelftrack.app/privacy-policy.html`.
+4. Play Console + app `privacyPolicyUrl` → `https://shelftrack.app/privacy-policy.html` (done).
+
+**SEO:** `docs/sitemap.xml` and `docs/robots.txt` help Google index the site. Submit `https://shelftrack.app/sitemap.xml` in [Google Search Console](https://search.google.com/search-console) after deploy.
 
 The `docs/CNAME` file keeps the custom domain after each deploy.
 

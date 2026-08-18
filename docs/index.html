@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ShelfTrack — Shop smart. Waste less.</title>
+  <title>ShelfTrack — Grocery List App with Barcode Scan &amp; Expiry Tracking (Android)</title>
   <meta
     name="description"
-    content="ShelfTrack helps you scan groceries, build shopping lists, track stock and best-before dates, and ask AI about products — with most data kept on your phone."
+    content="ShelfTrack is a free Android grocery list app: scan barcodes, share live shopping lists, track pantry stock, save best-before dates, scan receipts, and ask AI — with your data kept on your phone."
   />
+  <meta
+    name="keywords"
+    content="grocery list app, shopping list app android, barcode scanner grocery, food expiry tracker, best before date app, pantry inventory app, shared shopping list, receipt scanner app, reduce food waste, boodschappenlijst app"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shelftrack.app/" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,9 +23,92 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/site.css" />
-  <meta property="og:title" content="ShelfTrack" />
-  <meta property="og:description" content="Shop smart. Waste less. Lists, stock, and best-before dates — together." />
-  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shelftrack.app/" />
+  <meta property="og:title" content="ShelfTrack — Grocery list, barcode scan &amp; expiry tracker" />
+  <meta
+    property="og:description"
+    content="Plan shops, scan products, share live lists with your household, and track best-before dates. Free on Android — most data stays on your phone."
+  />
+  <meta property="og:image" content="https://shelftrack.app/assets/icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ShelfTrack — Shop smart. Waste less." />
+  <meta
+    name="twitter:description"
+    content="Android grocery list app with barcode scanning, shared lists, pantry tracking, and expiry reminders."
+  />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "ShelfTrack",
+        "url": "https://shelftrack.app/",
+        "description": "Official site for ShelfTrack — an Android grocery shopping list and food expiry tracking app."
+      },
+      {
+        "@type": "Organization",
+        "name": "ShelfTrack",
+        "url": "https://shelftrack.app/",
+        "email": "shelftrack.support@gmail.com",
+        "logo": "https://shelftrack.app/assets/icon.png"
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "ShelfTrack",
+        "operatingSystem": "Android",
+        "applicationCategory": "ShoppingApplication",
+        "description": "Grocery list app with barcode scanning, live shared lists, pantry and expiry tracking, receipt import, and AI product help. Most grocery data is stored locally on your device.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.shelftrack.app",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.shelftrack.app",
+        "featureList": "Barcode scanner, Shopping lists, Live shared lists, Voice add items, Best-before expiry tracking, Pantry inventory, Receipt scanning, Ask AI assistant"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ShelfTrack?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ShelfTrack is an Android app for grocery shopping lists, barcode product lookup, pantry stock, and best-before date reminders. You can share a live list with family using a join code, scan receipts after shopping, and ask AI about products."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ShelfTrack free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The free tier includes barcode scanning, Ask AI with a fair usage quota, and up to two shopping lists with 40 items each. Pro unlocks receipt matching, kitchen and expiry tracking, unlimited lists, and more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does ShelfTrack work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your shopping lists, pantry, and purchase history are stored locally on your phone in SQLite, so you can view and edit them without an account. Barcode lookup, shared lists, and AI features need an internet connection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do shared grocery lists work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Turn on live sharing on a list to get a six-digit join code. Other people enter the code in ShelfTrack to see the same list. Adds, check-offs, and deletes stay in sync while the list is open."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="visually-hidden" href="#main">Skip to content</a>
@@ -27,7 +116,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand-link" href="index.html" aria-current="page">
-        <img src="assets/icon.png" width="32" height="32" alt="" />
+        <img src="assets/icon.png" width="32" height="32" alt="ShelfTrack app icon" />
         <span class="brand-link__name">ShelfTrack</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -43,7 +132,7 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="ShelfTrack">
+    <section class="hero" aria-label="ShelfTrack grocery app">
       <div class="hero__grain" aria-hidden="true"></div>
       <div class="hero__inner">
         <div class="hero__brand">
@@ -52,13 +141,14 @@
             src="assets/icon.png"
             width="56"
             height="56"
-            alt=""
+            alt="ShelfTrack app icon"
           />
           <p class="hero__name">ShelfTrack</p>
         </div>
-        <h1 class="hero__headline">Shop smart. Waste less.</h1>
+        <h1 class="hero__headline">The grocery list app that helps you shop smarter and waste less food</h1>
         <p class="hero__support">
-          Your list, stock, and best-before dates — together. Scan products, plan the shop, and keep what you have at home in view.
+          Plan your shop, scan barcodes at the shelf, share a live list with your household, and track
+          best-before dates at home — with lists and pantry data kept on your Android phone.
         </p>
         <div class="hero__ctas">
           <a
@@ -66,41 +156,192 @@
             href="https://play.google.com/store/apps/details?id=com.shelftrack.app"
             >Get it on Google Play</a
           >
-          <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+          <a class="btn btn--ghost" href="#features">See features</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="how-it-works">
-      <h2 class="section__title">How it works</h2>
+    <section class="section" id="features">
+      <h2 class="section__title">Everything you need for grocery shopping — in one Android app</h2>
       <p class="section__lead">
-        One app for the trip to the store and what happens after you get home.
+        ShelfTrack combines a smart shopping list, barcode scanner, pantry tracker, and expiry
+        reminders so you buy what you need, use what you have, and throw away less.
       </p>
       <ul class="feature-list">
         <li>
-          <h3>Scan</h3>
-          <p>Look up barcodes, capture prices and expiry dates from labels, and add products without retyping names.</p>
+          <h3>Smart shopping lists</h3>
+          <p>
+            Build weekly grocery lists, check items off in the store, add products by typing or
+            voice, and keep multiple lists for different shops or meal plans.
+          </p>
         </li>
         <li>
-          <h3>Lists</h3>
-          <p>Plan weekly shops, share live lists with household join codes, or add items by voice while your hands are full.</p>
+          <h3>Barcode scanner</h3>
+          <p>
+            Scan product barcodes to look up names and details quickly — no more guessing aisles or
+            retyping long labels from packaging.
+          </p>
         </li>
         <li>
-          <h3>Stock &amp; expiry</h3>
-          <p>See what you bought, what you still have at home, and what’s going off soon — so less food ends up wasted.</p>
+          <h3>Live shared lists</h3>
+          <p>
+            Share a list with a six-digit join code so partners or housemates see the same groceries
+            in real time. Perfect for shared shopping and last-minute adds.
+          </p>
         </li>
         <li>
-          <h3>Ask AI</h3>
-          <p>Ask about products and stores with optional barcode context. Usage is limited fairly; most of your grocery data stays on device.</p>
+          <h3>Pantry &amp; expiry tracking</h3>
+          <p>
+            Save what you bought, scan best-before dates from labels, and get reminders for items
+            going off soon — so food gets eaten before it spoils.
+          </p>
+        </li>
+        <li>
+          <h3>Receipt scanning (Pro)</h3>
+          <p>
+            Photograph your receipt after checkout to match prices to your list and build a simple
+            purchase history of what you actually paid.
+          </p>
+        </li>
+        <li>
+          <h3>Ask AI about products</h3>
+          <p>
+            Not sure what to buy or how to use an ingredient? Ask the built-in assistant — optionally
+            with barcode context from something you scanned.
+          </p>
         </li>
       </ul>
     </section>
 
+    <section class="section section--muted" id="why">
+      <h2 class="section__title">Why choose ShelfTrack over a paper list or notes app?</h2>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <h3>Less food waste</h3>
+          <p>
+            Track best-before and use-by dates, see what is going off soon, and cook or freeze items
+            before they end up in the bin.
+          </p>
+        </article>
+        <article class="benefit-card">
+          <h3>Privacy-first design</h3>
+          <p>
+            No account required for core features. Your shopping lists, pantry, and purchase history
+            live in local storage on your device — not sold to advertisers.
+          </p>
+        </article>
+        <article class="benefit-card">
+          <h3>Built for real shops</h3>
+          <p>
+            Check items off while you walk the aisles, scan barcodes at the shelf, and optionally
+            import a receipt when you get home.
+          </p>
+        </article>
+        <article class="benefit-card">
+          <h3>Household-friendly</h3>
+          <p>
+            One person adds milk on the way home; the other sees it on the shared list instantly.
+            No more duplicate buys or forgotten items.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="who">
+      <h2 class="section__title">Who is ShelfTrack for?</h2>
+      <p class="section__lead">
+        Whether you call it a boodschappenlijst, weekly shop, or grocery run — ShelfTrack fits
+        busy households, meal planners, and anyone who wants to cut food waste without spreadsheets.
+      </p>
+      <ul class="use-list">
+        <li>Families and couples who share grocery shopping</li>
+        <li>People who forget expiry dates in the fridge or pantry</li>
+        <li>Shoppers who want barcode lookup instead of manual typing</li>
+        <li>Anyone building a simple purchase history after supermarket trips</li>
+        <li>Android users looking for a free grocery list app with optional Pro upgrades</li>
+      </ul>
+    </section>
+
+    <section class="section" id="faq">
+      <h2 class="section__title">Frequently asked questions</h2>
+      <p class="section__lead">
+        Quick answers about the ShelfTrack grocery app. More detail on the
+        <a href="support.html">support page</a>.
+      </p>
+      <div class="faq">
+        <details>
+          <summary>Is ShelfTrack a free grocery list app?</summary>
+          <div class="faq__body">
+            <p>
+              Yes. You can download ShelfTrack free on Google Play. The free version includes barcode
+              scanning, Ask AI (with fair usage limits), and up to two lists with 40 items each.
+              Pro adds receipt matching, kitchen and expiry tracking, unlimited lists, and more.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I share a shopping list with my partner or family?</summary>
+          <div class="faq__body">
+            <p>
+              Yes. Enable live sharing on a list to get a short join code. Others install ShelfTrack,
+              tap Join list, and enter the code. Changes sync while the shared list is open on both
+              phones.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Does ShelfTrack track expiry dates and best-before labels?</summary>
+          <div class="faq__body">
+            <p>
+              With Pro, you can save best-before dates by scanning labels or entering dates manually.
+              ShelfTrack shows items going off soon in a separate section from expired products, so
+              you know what to use first.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Where is my grocery data stored?</summary>
+          <div class="faq__body">
+            <p>
+              Lists, pantry items, and purchase history are stored locally on your Android phone.
+              Optional online features (shared lists, AI, analytics) only send what is needed for
+              those features. Read our <a href="privacy-policy.html">privacy policy</a> for details.
+            </p>
+          </div>
+        </details>
+        <details>
+          <summary>Which phones does ShelfTrack support?</summary>
+          <div class="faq__body">
+            <p>
+              ShelfTrack is available for Android on Google Play. You need a camera for barcode and
+              receipt scanning. Microphone access is optional and only used when you add items by voice.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="download-heading">
+      <div class="cta-band__inner">
+        <h2 id="download-heading">Download ShelfTrack on Google Play</h2>
+        <p>
+          Start your next grocery list in seconds. Scan products, share with your household, and keep
+          best-before dates under control.
+        </p>
+        <a
+          class="btn btn--primary"
+          href="https://play.google.com/store/apps/details?id=com.shelftrack.app"
+          >Install ShelfTrack — free</a
+        >
+      </div>
+    </section>
+
     <section class="privacy-band" aria-labelledby="privacy-heading">
       <div class="privacy-band__inner">
-        <h2 id="privacy-heading">Built for real shopping</h2>
+        <h2 id="privacy-heading">Your lists stay yours</h2>
         <p>
-          No account required for the core experience. Shopping lists, pantry, and purchase history live in SQLite on your phone. We don’t sell your personal data.
+          ShelfTrack is built for everyday grocery shopping, not data harvesting. Core lists and
+          pantry data stay on your phone. We do not sell your personal information.
         </p>
         <a class="btn btn--outline" href="privacy-policy.html">Read the privacy policy</a>
       </div>
@@ -111,7 +352,7 @@
     <div class="site-footer__inner">
       <div>
         <p class="site-footer__brand">ShelfTrack</p>
-        <p class="site-footer__meta">Shop smart. Waste less.</p>
+        <p class="site-footer__meta">Grocery list · Barcode scan · Expiry tracker · Android app</p>
       </div>
       <ul class="site-footer__links">
         <li><a href="support.html">Support</a></li>

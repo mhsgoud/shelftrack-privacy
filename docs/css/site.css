@@ -406,6 +406,104 @@ a:hover {
 .feature-list p {
   margin: 0;
   color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.section--muted {
+  background: var(--mist-deep);
+  width: 100%;
+  max-width: none;
+  padding-left: max(1rem, calc((100% - var(--max)) / 2 + 1rem));
+  padding-right: max(1rem, calc((100% - var(--max)) / 2 + 1rem));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section--muted .section__title,
+.section--muted .benefits-grid {
+  width: min(100%, var(--max));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.benefit-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  padding: 1.25rem 1.35rem;
+}
+
+.benefit-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 0.45rem;
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.use-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: 36rem;
+  color: var(--text-secondary);
+  display: grid;
+  gap: 0.55rem;
+}
+
+.use-list li {
+  line-height: 1.5;
+}
+
+.section .faq {
+  max-width: none;
+}
+
+.cta-band {
+  background: linear-gradient(135deg, var(--forest-deep) 0%, var(--forest) 100%);
+  color: #e8efe3;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.cta-band__inner {
+  width: min(100% - 2rem, 32rem);
+  margin: 0 auto;
+}
+
+.cta-band h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.65rem;
+}
+
+.cta-band p {
+  margin: 0 0 1.35rem;
+  color: rgba(232, 239, 227, 0.88);
+  line-height: 1.55;
 }
 
 .privacy-band {
