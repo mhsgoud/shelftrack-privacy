@@ -6,9 +6,34 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://shelftrack.app/support.html</loc>
+    <loc>https://shelftrack.app/blog.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://shelftrack.app/blog/reduce-food-waste-at-home.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shelftrack.app/blog/how-to-track-pantry-expiry-dates.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shelftrack.app/blog/shared-shopping-list-for-families.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shelftrack.app/blog/best-grocery-list-app-android.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shelftrack.app/support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shelftrack.app/privacy-policy.html</loc>
